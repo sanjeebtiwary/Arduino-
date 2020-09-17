@@ -1,0 +1,30 @@
+const int switchPin = 2; // switch input
+const int motor1Pin = 3; // H-bridge leg 1 (pin 2, 1A)
+const int motor2Pin = 4; // H-bridge leg 2 (pin 7, 2A)
+const int enablePin = 9; // H-bridge enable pin
+void setup() {
+// set the switch as an input:
+pinMode(switchPin, INPUT);
+pinMode(12,OUTPUT);
+pinMode(A0,INPUT);
+// set all the LOWother pins you’re using as outputs:
+pinMode(motor1Pin, OUTPUT);
+pinMode(motor2Pin, OUTPUT);
+pinMode(enablePin, OUTPUT);
+// set enablePin high so that motor can turn on:
+digitalWrite(enablePin, HIGH);
+}
+
+void loop() {
+// if the switch is high, motor will turn on one direction:
+if (analogRead(A0)>0)
+{
+digitalWrite(motor2Pin, LOW);
+digitalWrite(motor1Pin, LOW);
+} // set leg 1 of the H-bridge low
+else
+{
+digitalWrite(motor1Pin, HIGH);
+digitalWrite(motor2Pin, LOW);
+}
+}

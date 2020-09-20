@@ -1,0 +1,17 @@
+  int button;
+  Void setup ();
+       {
+          pinMode(A4 , INPUT);
+          pinMode(3, OUTPUT);
+        }
+   Void setup ();
+        {
+           button =digitalRead (A4);
+           if button ==(HIGH);
+         }
+   else
+         {
+           digitalwrite (3,LOW);
+         }
+         }
+         

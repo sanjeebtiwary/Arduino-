@@ -1,0 +1,8 @@
+{
+Void Setup()
+  {
+   //The Void Setup is used for the single work to done
+   PinMode (13,OUTPUT);
+   digitalwrite (13,HIGH);
+   }
+ }

@@ -1,0 +1,11 @@
+// For single way moving..
+VoidSetup();
+   {
+       PinMode(5,OUTPUT);
+       PinMode(6,OUTPUT);
+   }
+ VoidSetup();
+   {
+       digitalWrite(5,HIGH);
+       digitalWritr(6,LOW);
+    }

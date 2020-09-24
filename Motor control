@@ -1,5 +1,3 @@
-// The program is to move the moter at forward direction and direction for 1 second and than  it stop for 1 second and backward 
-direction and it's go on.
 
 //This programing is specillay for the Ardino Uno
 const int pwm = 2 ;	//initializing pin 2 as pwm
